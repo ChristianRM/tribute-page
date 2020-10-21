@@ -1,6 +1,8 @@
 html {
     margin: 0;
     padding: 0;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   body {
@@ -8,8 +10,8 @@ html {
     background-color: #20063B;
     color: #c2f9bb;
     font-family: 'Noto Sans';
-    padding: 30px;
     margin: 0;
+    padding: 30px;
   }
 
   h1 {
@@ -24,20 +26,26 @@ html {
     text-align: center;
   }
   p {
-    padding: 0;
-    margin: 0;
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
     font-weight: 700;
   }
   img{
-    display: block;
-    max-width:500px;
-    max-height:500px;
+    max-width:100%;
+    max-height:100%;
     margin-left: auto;
     margin-right: auto;
   }
 
   figcaption {
     text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: azure;
+    font-weight: 200;
   }
 
   #blankspace {
@@ -55,7 +63,7 @@ html {
     background-color: rgb(100, 100, 100, 0.3);
     padding: 0px;
     margin: 0px;
-    border-radius: 0px;
+    border-radius: 5px;
     align-items: center;
   }
 
@@ -69,9 +77,11 @@ html {
     height: 100vh;
   }
 
-  footer {
-    text-align: right;
+  .footer {
+    text-align: center;
     font-size: 10pt;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   
   @media (max-width: 750px) {
@@ -80,16 +90,13 @@ html {
     }
     .painting-div {
       flex-direction: column;
-      padding: 20px;
     }
     .header {
-      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg");
-      background-position:center;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 15rem;
-      padding-bottom: 10rem;
-      height: 10em;
+      display: none;
+    }
+    #title {
+        color: white;
+        background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg") center;
+        mix-blend-mode: normal;
     }
   }
-
