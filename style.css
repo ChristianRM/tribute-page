@@ -67,16 +67,24 @@ html {
     align-items: center;
   }
 
-  .header {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg");
-    background-size: cover;
-    background-position:center;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
+  .wrapper {
     height: 100vh;
   }
 
+  .parallax-img {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax-img {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg");
+    background-position-y: 20%;
+    width: 100%; /* width of container */
+    height: 500px; /* height of container */
+    overflow: hidden;
+  }
   .footer {
     text-align: center;
     font-size: 10pt;
